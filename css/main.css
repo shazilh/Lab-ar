@@ -232,3 +232,47 @@ hr{
     padding-left: 100px;
     padding-right: 100px;
 }
+@media screen and (min-width:200px) and (max-width:320px){
+  nav{
+    height: 5em;
+  }
+  
+  nav .hamburguesa{
+    display:flex;
+    visibility: visible;
+  }
+  nav article.hamburguesa i{
+    font-size: 2em;
+
+  }
+nav ul li{
+      display: none;
+    }
+}
+@media screen and (min-width:669px) and (max-width:768) {
+ 
+    nav article.hamburguesa{
+      display: none
+    }
+    #listaOculta{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px){
+  nav article.hamburguesa{
+    display: none;
+  }
+
+}
+
+@media screen  and (min-width:1201px){
+  #listaOculta{
+      visibility: visible;
+    }
+    nav article.hamburguesa{
+      display: none;
+    }
+
+}
+
