@@ -14,16 +14,42 @@
  <!--codigo de la barra de Navegación-->
   <header>
           <nav class="container col-md-12">
-             <div class="row col-md-offset-1">
+             <div class="row fijarNav">
                   <ul class="nav nav-pills">
                       <li ><a href="#"><img src="img/logoForma.png"></a></li>
-                      <li ><a class="fuente1 alineadoDer " href="#">Viaja</a></li>
-                      <li ><a class="fuente1 " href="#">Conduce</a></li>
-                      <li ><a class="fuente1 " href="#">Inicia Sesión</a></li>
+                      <li ><a class="fuente1 alineadoDer " href="#viajar">Viaja</a></li>
+                      <li ><a class="fuente1 " href="#conducir">Conduce</a></li>
+                      <li class="btn" data-toggle="modal" data-target="#iniciaSesion"><a class="fuente1 " href="#iniciaSesion">Inicia Sesión</a></li>
                     </ul>
-             </div>
-            </nav>
-         </header>
+                     <div class="modal fade" id="iniciaSesion" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content fondoModal ">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="fuentePrinc"><strong>Inicia Sesion</strong></h4>
+                                </div>
+                                <div class="modal-body ">
+                                   <img class="alinearFotoUsuario redondearImagen" src="img/usuario.jpg">
+                                    <div class="modal-body fondoSubModal">
+                                       <img class="tamanoImagLogin" src="img/username.png">
+                                       <label class="fondoGris">Username</label>
+                                    </div>
+                                    <div class="modal-body fondoSubModal">
+                                       <img class="tamanoImagLogin" src="img/password.png">
+                                       <label class="fondoGris">Password</label>
+                                       <div class="modal-body fondoSubModal2">
+                                       <label class="fondoAmarillo2">LOGIN</label>
+                                        </div>
+                                        <label>Forgot Password? Click <a url="#">here</a></label>
+                                    </div>
+                                    
+                                </div>
+                            </div>   
+                         </div>
+                 </div>
+              </div>
+          </nav>
+   </header>
 <!--Comienza código de la primera Sección-->   
   <section class="container col-md-12">
       <div class="row imgfondo1">
@@ -53,7 +79,7 @@
         </div>
     </section>
  <!--Comienza código de la Tercera Sección--> 
-         <section class="container col-md-12 quitarPaddings">
+         <section id="conducir" class="container col-md-12 quitarPaddings">
               <div class="row fondo3">
                        <div class="col-md-3 diseno2">
                             <p class="colorBlancoOrigen fuentePrinc tamanoFuente2 agregarMargenArriba2"><strong>Conduce cuando quieras</strong></p>
@@ -63,9 +89,9 @@
                   </div>
          </section>
           <!--Comienza código de la Cuarta Sección--> 
-         <section class="container col-md-12 quitarPaddings">
+         <section id="viajar" class="container col-md-12 quitarPaddings">
             <div class="row fondoAmarilloBack">
-               <img src="img/"
+               <img class="mapa" src="img/uber.png" >
                <div class="col-md-5 col-md-offset-1">
                   <p class="colorBlancoOrigen fuentePrinc tamanoFuente2 agregarMargenArriba2"><strong>Tarifas</strong></p>
                   <p class="colorBlancoOrigen fuentePrinc">Consulta las Tarifas LabCar Aquí</p> 
@@ -78,7 +104,51 @@
                 
             </div>
          </section>
-    
+         <!--Comienza  de la Quinta Sección--> 
+         <section class="container col-md-12 ">
+             <footer class="row fondoFooter">
+                <div class="col-md-offset-1"><img class="logo1" src="img/logoBlanco.png"></div>
+                <hr class="linea">
+                <div class="col-md-12 col-md-offset-1">
+                    <div class="col-md-4">
+                       <ul class="lista1">
+                           <li class="agregarMargenAbajo"><a class="enlace">Viaja</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Conduce</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Ciudades</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Ciudades</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Entrega</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Cómo Funciona?</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Países</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Seguridad</a></li>
+                       </ul>
+                    </div>
+                    <div class="col-md-4">
+                       <ul class="lista2">
+                           <li class="agregarMargenAbajo"><a class="enlace">Oportunidades</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Nuestra Historia</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">API de LabCar</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Eventos</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Desarrolladores</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Servicios</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Laboratoria</a></li>
+                           <li class="agregarMargenAbajo"><a class="enlace">Coders</a></li>
+                       </ul>
+                    </div>
+                    <div class="col-md-2 apps">
+                        <img class="agregarMargenAbajo" src="img/appstore.png">
+                        <img src="img/enBadgeWebGeneric.png">
+                    </div>
+                  </div>  
+                <div class="row col-md-offset-1">
+                   <img class="redes" src="img/facebook.png"><img class="redes" src="img/instagram.png"><img class="redes" src="img/twitter.png">
+                </div>
+                <hr class="linea">
+                <p class="row col-md-offset-1 colorBlancoOrigen tamanoCopy">©2017 LabCar technologies Inc.</p>
+                
+                 
+             </footer>
+         </section>
+         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/main.js"></script>    
