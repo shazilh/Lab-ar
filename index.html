@@ -13,40 +13,14 @@
 <body>
  <!--codigo de la barra de Navegación-->
   <header>
-          <nav class="container col-md-12">
+          <nav class="container">
              <div class="row fijarNav">
-                  <ul class="nav nav-pills">
-                      <li ><a href="#"><img src="img/logoForma.png"></a></li>
-                      <li ><a class="fuente1 alineadoDer " href="#viajar">Viaja</a></li>
+                  <img class="alineado1" src="img/logoForma.png">
+                  <ul class="nav nav-pills pull-right">
+                      <li ><a class="fuente1" href="#viajar">Viaja</a></li>
                       <li ><a class="fuente1 " href="#conducir">Conduce</a></li>
                       <li class="btn" data-toggle="modal" data-target="#iniciaSesion"><a class="fuente1 " href="#iniciaSesion">Inicia Sesión</a></li>
                     </ul>
-                     <div class="modal fade" id="iniciaSesion" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content fondoModal ">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="fuentePrinc"><strong>Inicia Sesion</strong></h4>
-                                </div>
-                                <div class="modal-body ">
-                                   <img class="alinearFotoUsuario redondearImagen" src="img/usuario.jpg">
-                                    <div class="modal-body fondoSubModal">
-                                       <img class="tamanoImagLogin" src="img/username.png">
-                                       <label class="fondoGris">Username</label>
-                                    </div>
-                                    <div class="modal-body fondoSubModal">
-                                       <img class="tamanoImagLogin" src="img/password.png">
-                                       <label class="fondoGris">Password</label>
-                                       <div class="modal-body fondoSubModal2">
-                                       <label class="fondoAmarillo2">LOGIN</label>
-                                        </div>
-                                        <label>Forgot Password? Click <a url="#">here</a></label>
-                                    </div>
-                                    
-                                </div>
-                            </div>   
-                         </div>
-                 </div>
               </div>
                 <article class="hamburguesa ">
                   <i class="fa fa-bars iconNav" ></i>
@@ -54,24 +28,24 @@
           </nav>
    </header>
 <!--Comienza código de la primera Sección-->   
-  <section class="container col-md-12">
+  <section class="container-fluid">
       <div class="row imgfondo1">
            <div class="col-md-4 fondoAmarillo alineado ">
               <p class="letraBlanca agregarMargenArriba quitarMargen">Disfruta del Viaje</p>
               <p class="letraBlanca ">Eres dueño de tu tiempo</p>
               <p class="letraBlancaMediana agregarMargenArriba ">Viaja con <span><img src="img/logoBlanco.png"></span></p>
-              <button type="button" class="colorBoton fuentePrinc agregarMargenAbajo"><strong>REGÍSTRATE</strong></button><br>
+              <button type="button" class="colorBoton fuentePrinc agregarMargenAbajo btn" data-toggle="modal" data-target="#registrarse"><strong>REGÍSTRATE</strong></button><br>
               <hr class="colorBlancoOrigen agregarMargenIzq agregarFloat"><span class="colorBlancoOrigen agregarFloat">o bien</span><hr class="colorBlancoOrigen  agregarFloat">
               <br>
               <div class="agregarMargenAbajo"></div>
-              <button type="button" class="colorBoton fuentePrinc agregarMargenAbajo"><strong>Conviértete en un conductor</strong></button>
+              <button type="button" class="colorBoton fuentePrinc agregarMargenAbajo btn" data-toggle="modal" data-target="#convertirse"><strong>Conviértete en un conductor</strong></button>
            </div>
       </div>
   </section>
 <!--Comienza código de la segunda Sección-->    
-    <section class="container col-md-12 quitarPaddings">
-      <div class="row fondoAmarilloBack">
-          <div class="diseno">
+    <section class="container-fluid  fondoAmarilloBack">
+      <div class="row fondoAmarilloBack diseno">
+          <div class="">
                <img class="tamanoImgIphone"src="img/iPhone6Plus.png">
                <div class="col-md-3 alinear">
                     <p class="colorBlancoOrigen fuentePrinc tamanoFuente2 "><strong>Descarga la nueva App</strong></p>
@@ -82,7 +56,7 @@
         </div>
     </section>
  <!--Comienza código de la Tercera Sección--> 
-         <section id="conducir" class="container col-md-12 quitarPaddings">
+         <section id="conducir" class="container-fluid">
               <div class="row fondo3">
                        <div class="col-md-3 diseno2">
                             <p class="colorBlancoOrigen fuentePrinc tamanoFuente2 agregarMargenArriba2"><strong>Conduce cuando quieras</strong></p>
@@ -92,10 +66,10 @@
                   </div>
          </section>
           <!--Comienza código de la Cuarta Sección--> 
-         <section id="viajar" class="container col-md-12 quitarPaddings">
+         <section id="viajar" class="container-fluid quitarPaddings">
             <div class="row fondoAmarilloBack">
                <img class="mapa" src="img/uber.png" >
-               <div class="col-md-5 col-md-offset-1">
+               <div class="col-md-5 col-md-offset-2 cuadro">
                   <p class="colorBlancoOrigen fuentePrinc tamanoFuente2 agregarMargenArriba2"><strong>Tarifas</strong></p>
                   <p class="colorBlancoOrigen fuentePrinc">Consulta las Tarifas LabCar Aquí</p> 
                   <img src="img/shape.png"><button type="button" class="colorBoton3 colorBlancoOrigen">Ingrese su punto de partida</button>
@@ -108,11 +82,11 @@
             </div>
          </section>
          <!--Comienza  de la Quinta Sección--> 
-         <section class="container col-md-12">
+         <section class="container-fluid">
              <footer class="row fondoFooter">
                 <div class="col-md-offset-1"><img class="logo1" src="img/logoBlanco.png"></div>
                 <hr class="linea">
-                <div class="col-md-12 col-md-offset-1">
+                <div class="col-md-11 col-md-offset-1">
                     <div class="col-md-4">
                        <ul class="lista1">
                            <li class="agregarMargenAbajo"><a class="enlace">Viaja</a></li>
@@ -151,7 +125,138 @@
                  
              </footer>
          </section>
-         
+         <!--inicia código del primer modal-->
+                     <div class="modal fade" id="iniciaSesion" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content fondoModal ">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="fuentePrinc"><strong>Inicia Sesion</strong></h4>
+                                </div>
+                                <div class="modal-body ">
+                                   <img class="alinearFotoUsuario redondearImagen" src="img/usuario.jpg">
+                                    <div class="modal-body fondoSubModal">
+                                       <img class="tamanoImagLogin" src="img/username.png">
+                                       <label class="fondoGris">Username</label>
+                                    </div>
+                                    <div class="modal-body fondoSubModal">
+                                       <img class="tamanoImagLogin" src="img/password.png">
+                                       <label class="fondoGris">Password</label>
+                                       <div class="modal-body fondoSubModal2">
+                                       <label class="fondoAmarillo2">LOGIN</label>
+                                        </div>
+                                        <label>Forgot Password? Click <a url="#">here</a></label>
+                                    </div>
+                                    
+                                </div>
+                            </div>   
+                         </div>
+                 </div>
+                 <!--inicia código del segundo modal-->
+                 <div class="modal fade" id="registrarse" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog fondoModalBody ">
+                            <div class="modal-content fondoModalBody">
+                                <div class="modal-header fondoModalHeader">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="colorBlancoOrigen alinearModalHeader">¿YA TIENES UNA CUENTA?</h4>
+                                </div>
+                                <div class="modal-body fondoModalBody">
+                                   <h4 class="fondoModalBody colorLetraGrisModal alinearModalBody1">O CREA UNA CUENTA NUEVA</h4>
+                                   <input type="text" placeholder="Nombre" class="disenoInputDer">
+                                   <input type="text" placeholder="Apellido" class="disenoInputIzq">
+                                <div class="modal-body fondoModalBody">  
+                                   <input type="text" placeholder="Correo Electronico" class="disenoInputDer2">
+                                </div>
+                                <div class="modal-body fondoModalBody"> 
+                                  <input type="text" placeholder="Teléfono" class="disenoInputDer2">
+                                </div>
+                                <div class="modal-body fondoModalBody"> 
+                                  <input type="text" placeholder="Contraseña" class="disenoInputDer2">
+                                </div>
+                                <div class="modal-body fondoModalBody"> 
+                                  <input type="text" placeholder="Ciudad" class="disenoInputDer2">
+                                </div>
+                                <div class="modal-body fondoModalBody">
+                                  <input type="text" placeholder="Opcional Código de Invitación" class="disenoInputDer2 "> 
+                                </div>
+                                <div class="modal-body fondoModalBody">
+                                  <div class="dropdown alinearDrop">
+                                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        ¿Cómo te enteraste de nuestro servicio?
+                                         <span class="caret"></span>
+                                      </button>
+                                  </div>
+                                </div>     
+                                </div>
+                                <div class="modal-footer colorFooter">
+                                    <button type="button" class="btn  estiloModalFooter" data-dismiss="modal">Enviar</button>
+                                </div>
+                         </div>
+                     </div>
+                  </div>                   
+                                     <!--inicia código del tercer modal-->
+                      <div class="modal fade" id="convertirse" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog fondoModalBody ">
+                            <div class="modal-content fondoModalBody">
+                                <div class="modal-header fondoModalHeader">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="colorBlancoOrigen alinearModalHeader">CONVERTIRSE EN CONDUCTOR</h4>
+                                </div>
+                                <div class="modal-body fondoModalBody">
+                                   <label class="fondoModalBody alinearModalBody1">¿TIENES UN VEHÍCULO DE CUATRO PUERTAS?</label>
+                                   <div class="dropdown alinearDrop ">
+                                      <button class="btn btn-default dropdown-toggle agregarPad" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        SI
+                                         <span class="caret"></span>
+                                      </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body fondoModalBody">
+                                   <label class="fondoModalBody alinearModalBody1">MARCA</label>
+                                   <div class="dropdown alinearDrop ">
+                                      <button class="btn btn-default dropdown-toggle agregarPad2" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Elige la marca del Vehículo
+                                         <span class="caret"></span>
+                                      </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body fondoModalBody">  
+                                    <label class="fondoModalBody alinearModalBody1">¿No ves tu vehículo en la lista? envía un correo electrónico a <a>sociosmdv@uber.com</a></label>
+                                </div>
+                                <div class="modal-body fondoModalBody">
+                                    <label class="fondoModalBody alinearModalBody1">MODELO</label>
+                                    <div class="dropdown alinearDrop ">
+                                      <button class="btn btn-default dropdown-toggle agregarPad2" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Elige el modelo del Vehículo
+                                         <span class="caret"></span>
+                                      </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body fondoModalBody">
+                                    <label class="fondoModalBody alinearModalBody1">AÑO</label>
+                                    <div class="dropdown alinearDrop ">
+                                      <button class="btn btn-default dropdown-toggle agregarPad2" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Elige el año del Vehículo
+                                         <span class="caret"></span>
+                                      </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body fondoModalBody">
+                                    <label class="fondoModalBody alinearModalBody1">NUMERO DE LA MATRÍCULA</label>
+                                    <div class="dropdown alinearDrop ">
+                                      <input type="text" placeholder="Número de la matrícula" class="agregarPad3">
+                                    </div>
+                                    <label class="fondoModalBody alinearModalBody1">La información de tu matrícula ayuda a los clientes a identificar tu vehículo</label>
+                                    
+                                </div>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                     </div>
+                    
+                     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/main.js"></script>    
